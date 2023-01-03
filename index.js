@@ -58,7 +58,8 @@ let startButtom = document.getElementById('start');
 count = 1
 startButtom.onclick = function() {
     let list = selectScenario(nPlayers, nChar);
-    let finalList = pushImpostor(list, nChar);
+    let almostList = pushImpostor(list, nChar);
+    let finalList = [almostList[0], shuffle(almostList[1])]
     console.log(finalList);
     let main = document.getElementById('template');
     mainChildern = main.children
@@ -124,3 +125,17 @@ function pushImpostor(list, nImpostores) {
     }
     return list;
 }
+
+function shuffle(array) {
+    const newArray = [...array]
+    const length = newArray.length
+  
+    for (let start = 0; start < length; start++) {
+      const randomPosition = Math.floor((newArray.length - start) * Math.random())
+      const randomItem = newArray.splice(randomPosition, 1)
+  
+      newArray.push(...randomItem)
+    }
+  
+    return newArray
+  }
