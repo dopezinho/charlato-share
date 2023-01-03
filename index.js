@@ -59,8 +59,11 @@ count = 1
 startButtom.onclick = function() {
     let list = selectScenario(nPlayers, nChar);
     let finalList = pushImpostor(list, nChar);
+    console.log(finalList);
     let main = document.getElementById('template');
+    mainChildern = main.children
     main.setAttribute('style', 'display: none;');
+    startButtom.setAttribute('style', 'display: none;')
     let show = document.getElementById('show');
     show.setAttribute('style', 'display: flex;');
     show.onclick = function (){
@@ -76,7 +79,11 @@ startButtom.onclick = function() {
             let role = document.getElementById('secretId');
             role.setAttribute('style', 'visibility: visible;');
             let cenario = document.getElementById('cenario');
-            cenario.innerHTML = `${finalList[0][0]}`;
+            if (role.innerHTML == 'Charlatão'){
+                cenario.innerHTML = `-`;
+            }else{
+                cenario.innerHTML = `${finalList[0][0]}`;
+            }
             cenario.setAttribute('style', 'visibility: visible;');
             showSecret.setAttribute('style', 'display: none;');
             show.setAttribute('style', 'display: block;');
