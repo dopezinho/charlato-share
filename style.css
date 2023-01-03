@@ -1,7 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 /* CSS RESET */
 
@@ -154,10 +153,9 @@ header {
 div .logo {
     display: flex;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 10px;
+    width: 20px;
+    height: 30px;
+    margin-top: 25px;
 }
 
 header .charlato {
@@ -178,9 +176,9 @@ header h1 {
     border-radius: 12px;
     width: 70%;
     text-align: center;
-    font-size: 48px;
-    font-weight: 600;
-    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .container {
@@ -203,7 +201,7 @@ header h1 {
     text-align: center;
     font-size: 40px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .wrapper span::selection,
@@ -234,7 +232,7 @@ header h1 {
     text-align: center;
     font-size: 55px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
     cursor: pointer;
 }
 
@@ -264,7 +262,7 @@ header h1 {
     text-align: center;
     font-size: 32px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
     cursor: pointer;
     background: transparent;
 }
@@ -293,7 +291,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
 }
 
 
@@ -312,7 +310,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
 }
 
 .role {
@@ -329,7 +327,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
 }
 
 #start {
@@ -345,7 +343,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
     background-image: url(./assets/mango.png);
     background-size: cover;
 }
