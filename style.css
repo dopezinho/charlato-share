@@ -1,0 +1,194 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSSZINHO */
+
+body {
+    background-color: #faebd7;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason5.png);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+header div.logo {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+header .charlato {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 260px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    width: 70%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players,
+.players1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 380px;
+    background: #e3c0da62;
+    border: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper span::selection,
+.players h2::selection,
+.players1 h2::selection {
+    color: none;
+    background: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 380px;
+    background: #e3c0da62;
+    border: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 70px;
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.wrapper span.num,
+.wrapper span.num1 {
+    font-size: 50px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.bora {
+    display: flex;
+    justify-content: center;
+}
+
+.bora button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 20px;
+    margin: 20px;
+    border-radius: 36px;
+    width: 25%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.bora button img {
+    width: 90px;
+}
+
