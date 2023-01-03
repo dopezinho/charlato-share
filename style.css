@@ -70,7 +70,7 @@ header {
     margin-top: 30px;
 }
 
-header div.logo {
+div .logo {
     display: flex;
     justify-content: center;
     width: 40px;
