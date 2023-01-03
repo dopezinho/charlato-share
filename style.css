@@ -230,7 +230,7 @@ header h1 {
     text-align: center;
     font-size: 55px;
     font-weight: 400;
-    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'PT Sans', sans-serif;
     cursor: pointer;
 }
 
@@ -245,7 +245,7 @@ header h1 {
 .bora {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .bora button {
@@ -262,7 +262,7 @@ header h1 {
     text-align: center;
     font-size: 32px;
     font-weight: 400;
-    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'PT Sans', sans-serif;
     cursor: pointer;
     background: transparent;
 }
@@ -291,7 +291,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -310,7 +310,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .role {
@@ -327,7 +327,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 #start {
@@ -343,7 +343,8 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'PT Sans', sans-serif;
     background-image: url(./assets/mango.png);
     background-size: cover;
+    margin-top: 200px;
 }
