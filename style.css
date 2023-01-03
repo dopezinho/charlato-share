@@ -113,16 +113,14 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    min-width: 380px;
     background: #e3c0da62;
     border: 20px;
     margin: 20px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-    width: 90%;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
