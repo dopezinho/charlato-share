@@ -294,6 +294,7 @@ header h1 {
     font-size: 35px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    text-shadow:  0 5px 10px #86a50c7e;
 }
 
 
@@ -313,6 +314,7 @@ header h1 {
     font-size: 35px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    text-shadow:  0 5px 10px #f7e81165;
 }
 
 .role {
@@ -330,6 +332,7 @@ header h1 {
     font-size: 35px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    text-shadow:  0 5px 10px #f6331565;
 }
 
 #start {
