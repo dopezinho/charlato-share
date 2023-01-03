@@ -1,7 +1,7 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 /* CSS RESET */
 
@@ -178,9 +178,9 @@ header h1 {
     border-radius: 12px;
     width: 70%;
     text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Amatic SC', cursive;
 }
 
 .container {
@@ -201,9 +201,9 @@ header h1 {
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mystery Quest', cursive;
 }
 
 .wrapper span::selection,
@@ -234,7 +234,7 @@ header h1 {
     text-align: center;
     font-size: 55px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mystery Quest', cursive;
     cursor: pointer;
 }
 
@@ -264,7 +264,7 @@ header h1 {
     text-align: center;
     font-size: 32px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mystery Quest', cursive;
     cursor: pointer;
     background: transparent;
 }
@@ -293,8 +293,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    text-shadow:  0 5px 10px #86a50c7e;
+    font-family: 'Mystery Quest', cursive;
 }
 
 
@@ -313,8 +312,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    text-shadow:  0 5px 10px #f7e81165;
+    font-family: 'Mystery Quest', cursive;
 }
 
 .role {
@@ -331,8 +329,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    text-shadow:  0 5px 10px #f6331565;
+    font-family: 'Mystery Quest', cursive;
 }
 
 #start {
@@ -348,7 +345,7 @@ header h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mystery Quest', cursive;
     background-image: url(./assets/mango.png);
     background-size: cover;
 }
