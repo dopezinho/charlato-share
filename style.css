@@ -147,7 +147,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-bottom: 180px;
 }
 
 div .logo {
@@ -155,13 +155,12 @@ div .logo {
     justify-content: center;
     width: 20px;
     height: 30px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 header .charlato {
     display: flex;
     justify-content: center;
-    margin-bottom: 260px;
 }
 
 header h1 {
@@ -170,7 +169,6 @@ header h1 {
     justify-content: center;
     height: 65px;
     margin-left: 5px;
-    margin-top: 10px;
     margin-bottom: 40px;
     border-radius: 12px;
     width: 70%;
