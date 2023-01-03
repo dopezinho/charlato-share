@@ -170,7 +170,7 @@ header h1 {
     justify-content: center;
     height: 65px;
     margin-left: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 140px;
     border-radius: 12px;
     width: 70%;
     text-align: center;
@@ -250,10 +250,10 @@ header h1 {
 .bora button {
     display: flex;
     align-items: center;
+    border-radius: 36px;
     justify-content: center;
     justify-content: center;
     height: 60px;    
-    border-radius: 36px;
     width: 25%;
     text-align: center;
     font-size: 32px;
