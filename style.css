@@ -176,9 +176,9 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: center;
     height: 60px;
     border: 20px;
-    background-color: transparent;
     margin: 20px;
     border-radius: 36px;
     width: 25%;
@@ -191,5 +191,49 @@ header h1 {
 
 .bora button img {
     width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* JS Classes */
+
+.jogador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 380px;
+    background: #e3c0da62;
+    border: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cenario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 380px;
+    background: #e3c0da62;
+    border: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 380px;
+    background: #e3c0da62;
+    border: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
