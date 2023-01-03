@@ -140,14 +140,14 @@ body {
     background-color: #faebd7;
     height: 100vh;
     width: 100%;
-    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason5.png);
+    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason6.png);
     background-size: cover;
 }
 
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 230px;
+    margin-bottom: 50px;
 }
 
 div .logo {
