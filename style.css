@@ -245,6 +245,7 @@ header h1 {
 .bora {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .bora button {
@@ -255,6 +256,7 @@ header h1 {
     height: 60px;
     border: 20px;
     margin: 20px;
+    
     border-radius: 36px;
     width: 25%;
     text-align: center;
