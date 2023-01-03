@@ -156,7 +156,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 40px;
-    margin-top: -90px;
+    margin-top: -140px;
 }
 
 header .charlato {
@@ -327,7 +327,7 @@ header h1 {
     font-family: 'PT Sans', sans-serif;
 }
 
-#show, #start {
+#show, #start, #showSecret {
     display: flex;
     align-items: center;
     justify-content: center;
