@@ -168,9 +168,8 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    border: 20px;
-    margin: 20px;
+    height: 65px;
+    margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 40px;
     border-radius: 12px;
