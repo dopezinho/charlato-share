@@ -53,32 +53,67 @@ minusChar.addEventListener('click', function() {
 
 //start button, change screen to second point
 
+
 let startButtom = document.getElementById('start');
+count = 1
+startButtom.onclick = function() {
+    let list = selectScenario(nPlayers, nChar);
+    let finalList = pushImpostor(list, nChar);
+    let main = document.getElementById('template');
+    main.setAttribute('style', 'display: none;');
+    let show = document.getElementById('show');
+    show.setAttribute('style', 'display: flex;');
+    show.onclick = function (){
+        main.innerHTML = ''
+        main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador">Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario"  id = "cenario">${finalList[0][0]}</p></div><div class = "divRole"><p class = "role"  id = "secretId">${finalList[1][count-1]}</p></div>`;
+        main.setAttribute('style', 'display: block;')
+        console.log(count);
+        console.log(finalList[0][0]);
+        console.log(finalList[1][count-1]);
+        count ++
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let startButtom = document.getElementById('start');
 let count = 1
 startButtom.onclick = function() {
-    //if (count < 2) {
-        console.log(count < 2);
-        personList = selectScenario(nPlayers, nChar); 
-        let listaFinal = pushImpostor(personList, nChar);
-        console.log(listaFinal)
-        let main = document.getElementById('template');
-        console.log(main);
-        main.innerHTML = '';
-        console.log('aquii');
-        main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador">Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario" style = "display: none;" id = "cenario">${listaFinal[0][0]}</p></div><div class = "divRole"><p class = "role" style = "display: none;" id = "secretId">${listaFinal[1][count]}</p></div><div class = "bora"><button id = "start">Next</button><div>`;
-        console.log('aquiii');
-        secretId = document.getElementById('secretId');
-        secretCenario = document.getElementById('cenario')
-        showRole = document.getElementById('start')
-        showRole.addEventListener('click', function() {
-            secretId.setAttribute('style', 'display: flex;');
-            secretCenario.setAttribute('style', 'display: flex;');
-            startButtom = document.getElementById('start')
+    let personList = selectScenario(nPlayers, nChar); 
+    let listaFinal = pushImpostor(personList, nChar);
+    let main = document.getElementById('template');
+    main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador">Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario" style = "display: none;" id = "cenario">${listaFinal[0][0]}</p></div><div class = "divRole"><p class = "role" style = "display: none;" id = "secretId">${listaFinal[1][count]}</p></div><div class = "bora"><button id = "start"></button><div>`;
+    secretId = document.getElementById('secretId');
+    secretCenario = document.getElementById('cenario')
+    count = count + 1
+    console.log(count);
+    startButtom = document.getElementById('start');
+    console.log(startButtom); 
+};
+*/
 
-            count = count + 1
-            console.log(count);
-        });
-    }
+/*showRole = document.getElementById('show')
+showRole.onclick = function() {
+    console.log(showRole);
+    secretId.setAttribute('style', 'display: flex;');
+    secretCenario.setAttribute('style', 'display: flex;');
+    startButtom = document.getElementById('start')
+    count = count + 1
+    console.log(count);
+    };*/
+
     /*} else{
         console.log(count >= 2);
         console.log('aquiii');

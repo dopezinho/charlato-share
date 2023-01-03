@@ -140,22 +140,23 @@ body {
     background-color: #faebd7;
     height: 100vh;
     width: 100%;
-    background-image: url(./assets/alorem.png);
+    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason5.png);
     background-size: cover;
 }
 
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 180px;
 }
 
-div .logo {
+.logo {
     display: flex;
     justify-content: center;
-    width: 20px;
-    height: 30px;
-    margin-top: 15px;
+    align-items: center;
+    height: 40px;
+    margin-top: -140px;
 }
 
 header .charlato {
@@ -326,7 +327,7 @@ header h1 {
     font-family: 'PT Sans', sans-serif;
 }
 
-#start {
+#show, #start {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,3 +343,4 @@ header h1 {
     background-size: cover;
     margin-top: 50px;
 }
+
