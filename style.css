@@ -1,8 +1,4 @@
-/* FONTS */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
-/* CSS RESET */
+/*  CSS RESET  */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -25,153 +21,20 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* CSSZINHO */
+/* CSSZIN  */
 
 body {
-    background-color: #c0e3cc6f;
-    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason8.png);
-    background-size: 100%;
-    max-height: 100vh;
+
 }
 
 header {
-    height: 10vh;
-}
 
-header h1 {
-    color: #523d1fc8;
-    align-items: center;
-    background: #0b521435;
-    background-size: 100%;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    display: flex;
-    font-size: 4vh;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    justify-content: center;
-    margin: -2vh 12vh;
-    padding: 1vh;
-}
-
-.logo {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 1vh;
-    visibility: hidden;   
-    width: 5vh;    
 }
 
 main {
-    align-items: center;
-    color: #523d1f;
-    display: flex;
-    font-size: 4vh;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    justify-content: center;
-    height: 70vh;
-    text-align: center;
-}
 
-.players,
-.players1 {
-    align-items: center;
-    background: #c6b3ccd7;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 1vh;
-    margin-top: 8vh;
-    padding: 1vh 10vh;
-}
-
-.wrapper {
-    background: #c6b3cc8f;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-    padding: 1vh 0;
-}
-
-.minus, .minus1 {
-    cursor: pointer;
-    padding: 5vh 3vh;
-}
-
-.plus, .plus1 {
-    cursor: pointer;
-    padding: 5vh 3vh;
-}
-
-.num, .num1 {
-    margin: 1vh;
 }
 
 footer {
-    align-items: center;
-    color: #523d1f;
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    justify-content: flex-start;
-}
-
-#start, #show, #showSecret {
-    background: #0b521435;
-    background-image: url(./assets/mango.png);
-    background-size: 100%;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-    cursor: pointer;
-    height: 25%;
-    width: 12%;
-}
-
-/* jS Classes */
-
-.jogador {
-    align-items: center;
-    background: #c6b3ccd7;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
-    margin: 8vh 2vh 1vh 2vh;
-    padding: 1vh 12vh;
-}
-
-.cenario {
-    align-items: center;
-    background: #c6b3cc8f;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
-    margin: 8vh 2vh 1vh 2vh;
-    padding: 1vh 14vh;
-}
-
-.role {
-    align-items: center;
-    background: #c6b3ccd7;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
-    margin: 8vh 2vh 1vh 2vh;
-    padding: 1vh;
-} 
-
-#transition {
-    align-items: center;
-    background: #c6b3ccd7;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); 
-    display: flex;   
-    justify-content: center;
-    margin: 8vh 4vh 1vh 4vh;
-    padding: 5vh 5vh;
-}
-
-/*  WEBKIT   */
-
-body,
-body::selection {  
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+    
 }
