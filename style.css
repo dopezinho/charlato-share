@@ -54,7 +54,7 @@ header {
 main {
     align-items: center;
     display: flex;
-    font-size: 3vh;
+    font-size: 4vh;
     justify-content: center;
     height: 70vh;
     text-align: center;
@@ -66,7 +66,8 @@ main {
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 1vh;
-    margin-top: 6vh;
+    margin-top: 8vh;
+    padding: 1vh 10vh;
 }
 
 .wrapper {
@@ -76,11 +77,11 @@ main {
 }
 
 .minus, .minus1 {
-    padding: 5vh;
+    padding: 5vh 3vh;
 }
 
 .plus, .plus1 {
-    padding: 5vh;
+    padding: 5vh 3vh;
 }
 
 .num, .num1 {

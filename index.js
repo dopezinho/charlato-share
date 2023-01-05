@@ -1,3 +1,5 @@
+import { buttons } from "./button.js";
+
 const situations = [
     //['Karaoke', ],
     //['Praia', ],
@@ -26,68 +28,88 @@ const situations = [
     ['Banheiro da balada', ['Drogado', 'O Apertado', 'O Que Passando Mal', 'O Que Puxa Assunto', 'O Que Manda Mensagem Pra Ex', 'O Briguento', 'Faxineiro', 'O Beijoqueiro', 'Nunca Sai Da Fila', 'Funcionario Descansando']]
 ];
 
+//Buttons functionality
+buttons()
+
 // Number of players and charlatans
 
-const minusPlayer = document.getElementById('minusPlayer');
-const plusPlayer = document.getElementById('plusPlayer');
-nPlayers = 1;
-plusPlayer.addEventListener('click', function() {
-    nPlayers = nPlayers + 1;
-});
-minusPlayer.addEventListener('click', function() {
-    if (nPlayers > 1) {
-        nPlayers = nPlayers - 1;
-    }
-});
-const minusChar = document.getElementById('minusChar');
-const plusChar = document.getElementById('plusChar');
-nChar = 1;
-plusChar.addEventListener('click', function() {
-    nChar = nChar + 1;
-});
-minusChar.addEventListener('click', function() {
-    if (nChar > 1) {
-        nChar = nChar - 1;
-    }
-});
+let nPlayers = 1;
+let nChar = 1;
+
+function selectNPlayers() {
+    const minusPlayer = document.getElementById('minusPlayer');
+    const plusPlayer = document.getElementById('plusPlayer');
+    
+    plusPlayer.addEventListener('click', function() {
+        nPlayers = nPlayers + 1;
+    });
+        
+    minusPlayer.addEventListener('click', function() {
+        if (nPlayers > 1) {
+            nPlayers = nPlayers - 1;
+        }
+    });
+    const minusChar = document.getElementById('minusChar');
+    const plusChar = document.getElementById('plusChar');
+    
+    plusChar.addEventListener('click', function() {
+        nChar = nChar + 1;
+    });
+    minusChar.addEventListener('click', function() {
+        if (nChar > 1) {
+            nChar = nChar - 1;
+        }
+    });
+};
+
+
+selectNPlayers();
+
 
 //start button, change screen to second point
 
 
 let startButtom = document.getElementById('start');
-count = 1
+let count = 1;
 startButtom.onclick = function() {
     let list = selectScenario(nPlayers, nChar);
     let almostList = pushImpostor(list, nChar);
-    let finalList = [almostList[0], shuffle(almostList[1])]
+    let finalList = [almostList[0], shuffle(almostList[1])];
     console.log(finalList);
     let main = document.getElementById('template');
-    main.setAttribute('style', 'visibility: hidden;');
-    startButtom.setAttribute('style', 'display: none;')
+    main.innerHTML = '<h1>Passe Para O Primeiro Jogador</p>';
+    startButtom.setAttribute('style', 'display: none;');
     let show = document.getElementById('show');
     show.setAttribute('style', 'display: flex;');
     show.onclick = function (){
         if (count - 1 < finalList[1].length){
-        main.innerHTML = ''
-        main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador" >Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario"  id = "cenario" style = "visibility: hidden;">${finalList[0][0]}</p></div><div class = "divRole"><p class = "role"  id = "secretId" style = "visibility: hidden;">${finalList[1][count-1]}</p></div>`;
-        main.setAttribute('style', 'display: block;');     
-        }
-        show.setAttribute('style', 'display: none;');
-        let showSecret = document.getElementById('showSecret');
-        showSecret.setAttribute('style', 'display: block;');
-        showSecret.onclick = function () {
-            let role = document.getElementById('secretId');
-            role.setAttribute('style', 'visibility: visible;');
-            let cenario = document.getElementById('cenario');
-            if (role.innerHTML == 'Charlatão'){
-                cenario.innerHTML = `-`;
-            }else{
-                cenario.innerHTML = `${finalList[0][0]}`;
+            main.innerHTML = '';
+            main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador" >Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario"  id = "cenario" style = "visibility: hidden;">${finalList[0][0]}</p></div><div class = "divRole"><p class = "role"  id = "secretId" style = "visibility: hidden;">${finalList[1][count-1]}</p></div>`;
+            main.setAttribute('style', 'display: block;');     
+            show.setAttribute('style', 'display: none;');
+            let showSecret = document.getElementById('showSecret');
+            showSecret.setAttribute('style', 'display: block;');
+            showSecret.onclick = function () {
+                let role = document.getElementById('secretId');
+                role.setAttribute('style', 'visibility: visible;');
+                let cenario = document.getElementById('cenario');
+                if (role.innerHTML == 'Charlatão'){
+                    cenario.innerHTML = `-`;
+                }else{
+                    cenario.innerHTML = `${finalList[0][0]}`;
+                }
+                cenario.setAttribute('style', 'visibility: visible;');
+                showSecret.setAttribute('style', 'display: none;');
+                show.setAttribute('style', 'display: block;');
+                count ++
             }
-            cenario.setAttribute('style', 'visibility: visible;');
-            showSecret.setAttribute('style', 'display: none;');
-            show.setAttribute('style', 'display: block;');
-            count ++
+        }else {
+            main.innerHTML = `<div class="players"><h2>Jogadores:</h2></div><div class="wrapper"><span class="minus" id="minusPlayer">-</span><span class="num" id="nJogadores">${nPlayers}</span><span class="plus" id="plusPlayer">+</span></div><div class="players1"><h2>Charlatos:</h2></div><div class="wrapper"><span class="minus1" id="minusChar">-</span><span class="num1" id="nImpostores">${nChar}</span><span class="plus1" id="plusChar">+</span></div>`
+            show.setAttribute('style', 'display: none;');
+            startButtom.setAttribute('style', 'display: block;')
+            selectNPlayers();
+            buttons();
+            count = 1;
         }
     }
 }
@@ -118,7 +140,7 @@ function pushImpostor(list, nImpostores) {
     let i = 0;
     while (i < nImpostores) {
         list[1].push('Charlatão');
-        const main = document.getElementById('main');
+        const main = document.getElementById('template');
         main.innerHTML = '';
         i = i + 1;
     }
