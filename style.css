@@ -76,7 +76,7 @@ main {
 .players,
 .players1 {
     align-items: center;
-    background: #b884c8d4;
+    background: #c6b3ccd7;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 1vh;
@@ -85,7 +85,7 @@ main {
 }
 
 .wrapper {
-    background: #b68fc27c;
+    background: #c6b3cc8f;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     padding: 1vh 0;
@@ -128,7 +128,7 @@ footer {
 
 .jogador {
     align-items: center;
-    background: #b884c8d4;
+    background: #c6b3ccd7;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
     margin: 8vh 2vh 1vh 2vh;
@@ -137,7 +137,7 @@ footer {
 
 .cenario {
     align-items: center;
-    background: #b68fc27c;
+    background: #c6b3cc8f;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
     margin: 8vh 2vh 1vh 2vh;
@@ -146,7 +146,7 @@ footer {
 
 .role {
     align-items: center;
-    background: #b884c8d4;
+    background: #c6b3ccd7;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
     margin: 8vh 2vh 1vh 2vh;
@@ -155,7 +155,7 @@ footer {
 
 #transition {
     align-items: center;
-    background: #b884c8d4;
+    background: #c6b3ccd7;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); 
     display: flex;   
