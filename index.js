@@ -62,8 +62,7 @@ startButtom.onclick = function() {
     let finalList = [almostList[0], shuffle(almostList[1])]
     console.log(finalList);
     let main = document.getElementById('template');
-    mainChildern = main.children
-    main.setAttribute('style', 'display: none;');
+    main.setAttribute('style', 'visibility: hidden;');
     startButtom.setAttribute('style', 'display: none;')
     let show = document.getElementById('show');
     show.setAttribute('style', 'display: flex;');
@@ -71,9 +70,9 @@ startButtom.onclick = function() {
         if (count - 1 < finalList[1].length){
         main.innerHTML = ''
         main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador" >Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario"  id = "cenario" style = "visibility: hidden;">${finalList[0][0]}</p></div><div class = "divRole"><p class = "role"  id = "secretId" style = "visibility: hidden;">${finalList[1][count-1]}</p></div>`;
-        main.setAttribute('style', 'display: block;');
-        show.setAttribute('style', 'display: none;');     
+        main.setAttribute('style', 'display: block;');     
         }
+        show.setAttribute('style', 'display: none;');
         let showSecret = document.getElementById('showSecret');
         showSecret.setAttribute('style', 'display: block;');
         showSecret.onclick = function () {
@@ -139,5 +138,3 @@ function shuffle(array) {
   
     return newArray
   }
-
-  let i = 10
