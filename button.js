@@ -1,10 +1,9 @@
-export function buttons() {
+export function buttons(a, b) {
 
     const plus = document.querySelector(".plus"),
         minus = document.querySelector(".minus"),
         num = document.querySelector(".num");
 
-    let a = 1;
 
     plus.addEventListener("click", () => {
         a++;
@@ -24,8 +23,6 @@ export function buttons() {
     const plus1 = document.querySelector(".plus1"),
         minus1 = document.querySelector(".minus1"),
         num1 = document.querySelector(".num1");
-
-    let b = 1;
 
     plus1.addEventListener("click", () => {
         b++;

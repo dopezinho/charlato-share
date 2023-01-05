@@ -29,12 +29,12 @@ const situations = [
 ];
 
 //Buttons functionality
-buttons()
-
-// Number of players and charlatans
 
 let nPlayers = 1;
 let nChar = 1;
+buttons(nPlayers, nChar)
+
+//Number of players and charlatans
 
 function selectNPlayers() {
     const minusPlayer = document.getElementById('minusPlayer');
@@ -62,12 +62,9 @@ function selectNPlayers() {
     });
 };
 
-
 selectNPlayers();
 
-
-//start button, change screen to second point
-
+//Start button, change screen to second point
 
 let startButtom = document.getElementById('start');
 let count = 1;
@@ -77,7 +74,7 @@ startButtom.onclick = function() {
     let finalList = [almostList[0], shuffle(almostList[1])];
     console.log(finalList);
     let main = document.getElementById('template');
-    main.innerHTML = '<h1>Passe Para O Primeiro Jogador</p>';
+    main.innerHTML = '<h1 id="transition">Passe Para O Primeiro Jogador</p>';
     startButtom.setAttribute('style', 'display: none;');
     let show = document.getElementById('show');
     show.setAttribute('style', 'display: flex;');
@@ -102,20 +99,19 @@ startButtom.onclick = function() {
                 showSecret.setAttribute('style', 'display: none;');
                 show.setAttribute('style', 'display: block;');
                 count ++
-            }
+            };
         }else {
             main.innerHTML = `<div class="players"><h2>Jogadores:</h2></div><div class="wrapper"><span class="minus" id="minusPlayer">-</span><span class="num" id="nJogadores">${nPlayers}</span><span class="plus" id="plusPlayer">+</span></div><div class="players1"><h2>Charlatos:</h2></div><div class="wrapper"><span class="minus1" id="minusChar">-</span><span class="num1" id="nImpostores">${nChar}</span><span class="plus1" id="plusChar">+</span></div>`
             show.setAttribute('style', 'display: none;');
             startButtom.setAttribute('style', 'display: block;')
             selectNPlayers();
-            buttons();
+            buttons(nPlayers, nChar);
             count = 1;
         }
     }
 }
 
-
-// randomize and returns the scenario
+//Randomize and returns the scenario
 
 function selectScenario(nPessoas, nImpostores) {
     let n = Math.floor(Math.random() * situations.length);
@@ -134,7 +130,7 @@ function selectScenario(nPessoas, nImpostores) {
     return personList;
 };
 
-// add the charlatans
+//Add the charlatans
 
 function pushImpostor(list, nImpostores) {
     let i = 0;
@@ -146,6 +142,8 @@ function pushImpostor(list, nImpostores) {
     }
     return list;
 }
+
+//Shuffle the characters
 
 function shuffle(array) {
     const newArray = [...array]
@@ -159,4 +157,4 @@ function shuffle(array) {
     }
   
     return newArray
-  }
+}

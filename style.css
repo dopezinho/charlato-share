@@ -136,11 +136,24 @@ footer {
     padding: 1vh 10vh;
 }
 
+#transition {
+    align-items: center;
+    background: #c884b7a0;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); 
+    display: flex;   
+    justify-content: center;
+    margin: 8vh 4vh 1vh 4vh;
+    padding: 5vh 5vh;
+}
+
 .cenario {
     align-items: center;
     background: #c884b774;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);   
+    display: flex;
+    justify-content: center; 
     margin-bottom: 1vh;
     margin-top: 8vh;
     padding: 1vh 10vh;
@@ -150,7 +163,9 @@ footer {
     align-items: center;
     background: #c884b746;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;  
     margin-bottom: 1vh;
     margin-top: 8vh;
     padding: 1vh 10vh;
