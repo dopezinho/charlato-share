@@ -1,6 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /* CSS RESET */
 
@@ -35,18 +35,22 @@ body {
 }
 
 header {
-    font-size: 4vh;
     height: 10vh;
 }
 
 header h1 {
+    color: #523d1fc8;
     align-items: center;
-    background: #16f73435;
+    background: #0b521435;
+    background-size: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     display: flex;
+    font-size: 4vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     justify-content: center;
-    margin: -2vh 15vh;
+    margin: -2vh 12vh;
     padding: 1vh;
 }
 
@@ -62,6 +66,8 @@ main {
     align-items: center;
     display: flex;
     font-size: 4vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     justify-content: center;
     height: 70vh;
     text-align: center;
@@ -69,7 +75,8 @@ main {
 
 .players,
 .players1 {
-    background: #e3c0da6f;
+    align-items: center;
+    background: #c884b7c4;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 1vh;
@@ -78,9 +85,10 @@ main {
 }
 
 .wrapper {
-    background: #e3c0da6f;
+    background: #c28fb5c4;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    padding: 1vh 0;
 }
 
 .minus, .minus1 {
@@ -105,12 +113,13 @@ footer {
 }
 
 #start, #show, #showSecret {
-    background: #e3c0da6f;
+    background: #0b521435;
     background-image: url(./assets/mango.png);
     background-size: 100%;
     border-radius: 8px;
     border: none;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
     height: 25%;
     width: 12%;
 }
