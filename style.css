@@ -34,14 +34,20 @@ body {
     max-height: 100vh;
 }
 
-header {    
+header {
+    font-size: 4vh;
+    height: 10vh;
+}
+
+header h1 {
     align-items: center;
+    background: #16f73435;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
-    margin: 2.5vh;
-    height: 7.5vh;
-    font-size: 4vh;
-    margin-top: 0;
+    margin: -2vh 15vh;
+    padding: 1vh;
 }
 
 .logo {
@@ -49,6 +55,7 @@ header {
     display: flex;
     justify-content: center;    
     width: 5vh;
+    margin: 1vh;
 }
 
 main {
@@ -77,10 +84,12 @@ main {
 }
 
 .minus, .minus1 {
+    cursor: pointer;
     padding: 5vh 3vh;
 }
 
 .plus, .plus1 {
+    cursor: pointer;
     padding: 5vh 3vh;
 }
 
