@@ -52,11 +52,11 @@ header {
 }
 
 main {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     font-size: 3vh;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
 }
 
@@ -90,7 +90,7 @@ main {
 footer {
     align-items: center;
     display: flex;
-    height: 30vh;
+    height: 20vh;
     justify-content: center;
 }
 
