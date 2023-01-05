@@ -31,8 +31,7 @@ body {
     background-color: #faebd7;
     background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason6.png);
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    max-height: 100vh;
 }
 
 header {    
@@ -40,7 +39,9 @@ header {
     display: flex;
     justify-content: center;
     margin: 2.5vh;
+    height: 7.5vh;
     font-size: 4vh;
+    margin-top: 0;
 }
 
 .logo {
@@ -54,7 +55,8 @@ main {
     align-items: center;
     display: flex;
     font-size: 5vh;
-    justify-content: center;    
+    justify-content: center;
+    height: 80vh;
     text-align: center;
 }
 
@@ -70,13 +72,29 @@ main {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin-bottom: 10vh;
 }
+
+footer {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+#start, #show, #showSecret {
+    background-color: black;
+    height: 50%;
+    width: 20%;
+}
+
 
 
 
 /* jS Classes */
 
+
+/*
 .jogador {
     display: flex;
     align-items: center;
@@ -146,6 +164,8 @@ main {
     background-size: cover;
     margin-top: 50px;
 }
+
+*/
 
 /*  WEBKIT   */
 
