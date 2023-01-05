@@ -53,6 +53,7 @@ header {
 main {
     align-items: center;
     display: flex;
+    font-size: 5vh;
     justify-content: center;    
     text-align: center;
 }
@@ -62,13 +63,14 @@ main {
     background: #e3c0da62;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-    margin: 5vh 20vh 5vh 20vh;
+    margin: 2vh 20vh 2vh 20vh;
 }
 
 .wrapper {    
     align-items: center;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 
