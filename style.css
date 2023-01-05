@@ -64,6 +64,7 @@ header h1 {
 
 main {
     align-items: center;
+    color: #523d1f;
     display: flex;
     font-size: 4vh;
     font-family: 'Open Sans', sans-serif;
@@ -107,6 +108,7 @@ main {
 
 footer {
     align-items: center;
+    color: #523d1f;
     display: flex;
     flex-direction: column;
     height: 20vh;
