@@ -85,7 +85,7 @@ main {
 }
 
 .wrapper {
-    background: #c28fb59e;
+    background: #c28fb57c;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     padding: 1vh 0;
@@ -138,7 +138,7 @@ footer {
 
 .cenario {
     align-items: center;
-    background: #c884b7c4;
+    background: #c28fb57c;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
     margin-bottom: 1vh;
@@ -153,11 +153,12 @@ footer {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
     margin-bottom: 1vh;
     margin-top: 8vh;
+    padding: 1vh;
 } 
 
 #transition {
     align-items: center;
-    background: #c884b7a0;
+    background: #c884b7c4;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); 
     display: flex;   
