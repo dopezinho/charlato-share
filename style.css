@@ -169,9 +169,7 @@ footer {
 
 /*  WEBKIT   */
 
-.wrapper span::selection,
-.players h2::selection,
-.players1 h2::selection {
+main {
     color: none;
     background: none;
     user-select: none;
