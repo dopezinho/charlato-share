@@ -106,10 +106,11 @@ main {
 }
 
 footer {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
+    flex-direction: column;
     height: 20vh;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #start, #show, #showSecret {
@@ -122,6 +123,11 @@ footer {
     cursor: pointer;
     height: 25%;
     width: 12%;
+}
+
+.alore {
+    margin-top: 20%;
+    margin-right: 60%;
 }
 
 /* jS Classes */
