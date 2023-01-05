@@ -57,9 +57,10 @@ header h1 {
 .logo {
     align-items: center;
     display: flex;
-    justify-content: center;    
-    width: 5vh;
+    justify-content: center;
     margin: 1vh;
+    visibility: hidden;   
+    width: 5vh;    
 }
 
 main {
