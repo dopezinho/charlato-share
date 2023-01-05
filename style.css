@@ -29,8 +29,8 @@ time, mark, audio, video {
 
 body {
     background-color: #e3c0da6f;
-    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason6.png);
-    background-size: 100vh;
+    background-image: url(./assets/boy\ and\ bear\ sketch\ by\ sam\ mason5.png);
+    background-size: 100%;
     max-height: 100vh;
 }
 
@@ -54,7 +54,7 @@ header {
 main {
     align-items: center;
     display: flex;
-    font-size: 5vh;
+    font-size: 3vh;
     justify-content: center;
     height: 80vh;
     text-align: center;
@@ -63,22 +63,29 @@ main {
 .players,
 .players1 {
     background: #e3c0da6f;
-    border-radius: 100px;
+    border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-    margin: 5vh 10vh 5vh 10vh;
-    padding: 2vh;
+    margin-bottom: 1vh;
+    margin-top: 6vh;
 }
 
 .wrapper {
-    margin-bottom: 10vh;
+    background: #e3c0da6f;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.minus, .minus1, .plus, .plus1 {
-    background: #e3c0da6f;
-    border-radius: 100px;
-    box-shadow: 0 5px 10px rgba(7, 2, 2, 0.7);
-    padding: 2vh;
-} 
+.minus, .minus1 {
+    padding: 5vh;
+}
+
+.plus, .plus1 {
+    padding: 5vh;
+}
+
+.num, .num1 {
+    margin: 1vh;
+}
 
 footer {
     align-items: center;
@@ -88,9 +95,14 @@ footer {
 }
 
 #start, #show, #showSecret {
-    background-color: black;
-    height: 50%;
-    width: 20%;
+    background: #e3c0da6f;
+    background-image: url(./assets/mango.png);
+    background-size: 100%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    height: 60%;
+    width: 12%;
 }
 
 
