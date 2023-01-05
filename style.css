@@ -131,8 +131,7 @@ footer {
     background: #c884b7c4;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
-    margin-bottom: 1vh;
-    margin-top: 8vh;
+    margin: 8vh 2vh 1vh 2vh;
     padding: 1vh 14vh;
 }
 
@@ -141,8 +140,7 @@ footer {
     background: #c28fb57c;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
-    margin-bottom: 1vh;
-    margin-top: 8vh;
+    margin: 8vh 2vh 1vh 2vh;
     padding: 1vh 14vh;
 }
 
@@ -151,8 +149,7 @@ footer {
     background: #c884b7c4;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
-    margin-bottom: 1vh;
-    margin-top: 8vh;
+    margin: 8vh 2vh 1vh 2vh;
     padding: 1vh;
 } 
 
