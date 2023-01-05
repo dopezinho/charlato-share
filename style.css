@@ -169,9 +169,10 @@ footer {
 
 /*  WEBKIT   */
 
-main {
+main,
+main::selection {
     color: none;
-    background: none;
+    background: none;    
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
