@@ -1,33 +1,5 @@
 import { buttons } from "./button.js";
 
-const situations = [
-    //['Karaoke', ],
-    //['Praia', ],
-    //['Zoológico', ],
-    ['Bar', ['Gerente', 'Garçon', 'Caixa', 'Universitario', 'Casal Apaixonado', 'Nóia', 'Vendedor de Bala', 'Fumante sem isqueiro', 'Bohêmio', 'Truqueiro']],
-    ['Academia', ['Sócio', 'Preguiçoso', 'Rato de Academia', 'Influênciadora', 'Recepcionista', 'Personal Galinha', 'Aluna de Zumba', 'Fisioculturista', 'Lutador', 'Fornecedor de Aparelhos de Academia']],
-    ['Balada', ['Mixologista/Bartender', 'Gerente', 'Drogado', 'Fumante', 'DJ', 'HéteroTop', 'Dançarino', 'Vendedor de Hot Dog', 'Eletricista', 'Funcionário de Limpeza']],
-    //['Cinema', ],
-    ['Clube', ['Treinador', 'Massagista', 'Salva-Vidas', 'Milionário', 'Sócio', 'Esportista', 'Jardineiro', 'Recepcionista', 'Cansado', 'Criança de Férias']],
-    ['Cruzeiro', ['Monitor', 'Capitão', 'Pai/Mãe de Primeira Viagem', 'Chef', 'Bartender', 'O Enjoado', 'Jogador Compulsivo', 'A Doida do Protetor Solar', 'Salva-Vidas', 'Baladeiro']],
-    ['Delegacia', ['Bêbado', 'Ladrão', 'Delegado', 'Preso por Roubo', 'Preso por 1 Paranga', 'Vítima', 'Familiar da Vítima', 'Advogado', 'Funcionário de Limpeza', 'Policial']],
-    //['Estacionamento', ],
-    ['Faculdade', ['Bixo', 'Professora', 'Traficantezinho', 'Funcionária da Limpeza', 'Vendedora da Cantina', 'Diretor', 'Bibliotecária', 'Veterano Que Não Se Forma', 'Atleticano Chato', 'Segurança']],
-    ['Farmacia', ['Caixa', 'Farmaceutico', 'Cliente Sem Atestado', 'Cliente Comprando Camisinha', 'Idoso', 'Hipocondriaco', 'Repositor de Gondola', 'Estagiaria', 'Maconheiro Comprando Colírio', 'O Que Compra Teste De Gravides']],
-    ['Festival', ['Perdido', 'Good Vibes', 'Artista', 'Fã de Carteirinha', 'Fumante', 'Funcionário da Limpeza', 'Segurança', 'Vendedor', 'Cambista', 'Caixa Ambulânte']],
-    ['Hospital', ['Médico', 'Infermeiro', 'Cirurgião', 'Recepcionista', 'Hipocondriaco', 'O Doente', 'O Louco', 'A Madre', 'Anestesista', 'O Acidentado']],
-    //['Mecanica', ],
-    ['Metro', ['Artista', 'Segurança', 'Bilheteiro', 'O Que Pulou A Catraca', 'Executivo', 'Bêbado', 'Vendedor Ambulânte', 'Passageiro', 'Sem Máscara', 'O Atrasado']],
-    ['Padaria', ['Padeiro', 'Bêbado', 'Caixa', 'O Que Compra Coxa Creme', 'Cliente Virado', 'Chepeiro', 'Balconista', 'Eletricista', 'Vigilância Sanitária', 'Vizinho']],
-    ['Parque', ['Skatista', 'Segurança Noturno', 'Vendedor de Água de Côco', 'Velha do Cooper', 'Boleiro', 'Jogador de Basquete', 'Guarda Civil Municipal', 'Casal Apaixonado', 'Jardineiro', 'Nóia']],
-    ['Posto de Gasolina', ['Frentista', 'Bêbado', 'Vendedor da Conveniência', 'Mecânico', 'Gerente', 'Caminhoneiro', 'Cliente', 'Turista de Ônibos', 'Motoboy', 'Ciclista']],
-    ['Restaurante', ['Chef', 'Bartender', 'Recepcionista', 'Caixa', 'Influênciadora', 'Vegeteriano', 'Cliente (Que Foge da Conta)', 'Inspetor Sanitârio', 'Casal Que Briga', 'Cliente Que Reclama']],
-    //['Rua', ],
-    ['Super Mercado', ['Estoquista', 'Caixa', 'Jardineiro da Loja', 'Gerente', 'Cliente', 'Menores Comprando Bebida', 'Anunciante', 'Criança Perdida', 'Louco por Promoção', 'Empacotador']],
-    //['Teatro', ],
-    ['Banheiro da balada', ['Drogado', 'O Apertado', 'O Que Passando Mal', 'O Que Puxa Assunto', 'O Que Manda Mensagem Pra Ex', 'O Briguento', 'Faxineiro', 'O Beijoqueiro', 'Nunca Sai Da Fila', 'Funcionario Descansando']]
-];
-
 //Buttons functionality
 
 let nPlayers = 1;
@@ -41,23 +13,42 @@ function selectNPlayers() {
     const plusPlayer = document.getElementById('plusPlayer');
     
     plusPlayer.addEventListener('click', function() {
-        nPlayers = nPlayers + 1;
+        if(nPlayers <= 10){
+            nPlayers++
+        }else if (nPlayers - nChar == 10 && nPlayers < 13){
+            nPlayers++;
+            nChar++;
+        }else if (nPlayers < 13) {
+            nPlayers++;
+        }
+
     });
         
     minusPlayer.addEventListener('click', function() {
-        if (nPlayers > 1) {
-            nPlayers = nPlayers - 1;
+        if (nPlayers > 1 && nPlayers <= 11) {
+            nPlayers--;
+        }else if (nPlayers > 11 && nChar > 1 && nPlayers - nChar == 10){
+            nPlayers--;
+            nChar--;
+        }else if (nPlayers > 1){
+            nPlayers--;
         }
     });
     const minusChar = document.getElementById('minusChar');
     const plusChar = document.getElementById('plusChar');
     
     plusChar.addEventListener('click', function() {
-        nChar = nChar + 1;
+        if (nChar < nPlayers) {
+            nChar++;
+        }
     });
     minusChar.addEventListener('click', function() {
-        if (nChar > 1) {
-            nChar = nChar - 1;
+        if (nChar > 1 && nChar <= 13) {
+            nChar--;
+        }
+        if (nChar > 1 && nPlayers - nChar >= 10){
+            nPlayers--;
+            nChar--;
         }
     });
 };
@@ -81,7 +72,11 @@ startButtom.onclick = function() {
     show.onclick = function (){
         if (count - 1 < finalList[1].length){
             main.innerHTML = '';
-            main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador" >Jogador ${count}</p></div><div class = "divCenario"><p class = "cenario"  id = "cenario" style = "visibility: hidden;">${finalList[0][0]}</p></div><div class = "divRole"><p class = "role"  id = "secretId" style = "visibility: hidden;">${finalList[1][count-1]}</p></div>`;
+            main.innerHTML = `<div class = "divJogador"><p id = "jogador" class = "jogador" >Jogador ${count}</p></div>
+            <div class="legend"><p id="ast">*</p><p class="text">Lugar</p><p id="ast">*</p></div>
+            <div class = "divCenario"><p class = "cenario"  id = "cenario" style = "visibility: hidden;">${finalList[0][0]}</p></div>
+            <div class="legend"><p id="ast">*</p><p class="text">Função</p><p id="ast">*</p></div>
+            <div class = "divRole"><p class = "role"  id = "secretId" style = "visibility: hidden;">${finalList[1][count-1]}</p></div>`;
             main.setAttribute('style', 'display: block;');     
             show.setAttribute('style', 'display: none;');
             let showSecret = document.getElementById('showSecret');
@@ -91,7 +86,7 @@ startButtom.onclick = function() {
                 role.setAttribute('style', 'visibility: visible;');
                 let cenario = document.getElementById('cenario');
                 if (role.innerHTML == 'Charlatão'){
-                    cenario.innerHTML = `-`;
+                    cenario.innerHTML = `xxxxx`;
                 }else{
                     cenario.innerHTML = `${finalList[0][0]}`;
                 }
@@ -101,7 +96,7 @@ startButtom.onclick = function() {
                 count ++
             };
         }else {
-            main.innerHTML = `<div class="players"><h2>Jogadores:</h2></div><div class="wrapper"><span class="minus" id="minusPlayer">-</span><span class="num" id="nJogadores">${nPlayers}</span><span class="plus" id="plusPlayer">+</span></div><div class="players1"><h2>Charlatos:</h2></div><div class="wrapper"><span class="minus1" id="minusChar">-</span><span class="num1" id="nImpostores">${nChar}</span><span class="plus1" id="plusChar">+</span></div>`
+            main.innerHTML = `<div class="players"><h2>Jogadores:</h2></div><div class="wrapper"><span class="minus" id="minusPlayer">*</span><span class="num" id="nJogadores">${nPlayers}</span><span class="plus" id="plusPlayer">*</span></div><div class="players1"><h2>Charlatos:</h2></div><div class="wrapper"><span class="minus1" id="minusChar">*</span><span class="num1" id="nImpostores">${nChar}</span><span class="plus1" id="plusChar">*</span></div>`
             show.setAttribute('style', 'display: none;');
             startButtom.setAttribute('style', 'display: block;')
             selectNPlayers();
@@ -114,6 +109,43 @@ startButtom.onclick = function() {
 //Randomize and returns the scenario
 
 function selectScenario(nPessoas, nImpostores) {
+    const situations = [
+        ['Karaoke', ['Cantor', 'Tímido', 'Desafinado', 'Bartender', 'Técnico de Áudio', 'Dançarino', 'Segurança', 'Gerente', 'Dono', 'Vendedor de Milho']],
+        ['Praia', ['Vendedor de Picolé', 'Salva Vidas', 'Gringo', 'Fotógrafo', 'Surfista', 'Vendedor de miçangas',' Dono do Quiosque', 'Esportista', 'Pescador', 'Morador Local']],
+        ['Zoológico', ['Veterinário', 'Jardineiro', 'Biólogo', 'Funcionário', 'Vendedor de Souvenier', 'Cambista', 'Guia', 'Visitante', 'Fotógrafo', 'Vendedor de Água']],
+        ['Bar', ['Gerente', 'Garçon', 'Caixa', 'Universitário', 'Casal Apaixonado', 'Nóia', 'Vendedor de Bala', 'Fumante sem Isqueiro', 'Bohêmio', 'Truqueiro']],
+        ['Academia', ['Sócio', 'Preguiçoso', 'Rato de Academia', 'Influênciadora', 'Recepcionista', 'Personal Galinha', 'Aluna de Zumba', 'Fisioculturista', 'Lutador', 'Fornecedor de Aparelhos de Academia']],
+        ['Balada', ['Mixologista/Bartender', 'Gerente', 'Drogado', 'Fumante', 'DJ', 'Héterotop', 'Dançarino', 'Vendedor de Hot Dog', 'Eletricista', 'Faxineiro']],
+        ['Cinema', ['Vendedor de Pipoca', 'Vendedor da Bilheteria', 'Cinegrafista', 'Casal Apaixonado', 'Pessoa que Ri Alto', 'Pessoa que Dorme', 'Pessoa que Fofóca', 'Pessoa Emocionada', 'Cosplay', 'Eletricista']],
+        ['Clube', ['Treinador', 'Massagista', 'Salva Vidas', 'Milionário', 'Sócio', 'Esportista', 'Jardineiro', 'Recepcionista', 'Cansado', 'Criança de Férias']],
+        ['Cruzeiro', ['Monitor', 'Capitão', 'Pai/Mãe de Primeira Viagem', 'Chef', 'Bartender', 'Nauseado', 'Jogador Compulsivo', 'A Doida do Protetor Solar', 'Salva Vidas', 'Baladeiro']],
+        ['Delegacia', ['Bêbado', 'Ladrão', 'Delegado', 'Preso por Roubo', 'Preso por uma Paranga', 'Vítima', 'Familiar da Vítima', 'Advogado', 'Faxineiro', 'Policial']],
+        ['Estacionamento', ['Manobrista', 'Cobrador','Dono', 'Funcionário', 'O Que Perdeu o Ticket', 'Impaciente', 'Fumante', 'Perderam seu Carro', 'Gerente', 'Bêbado']],
+        ['Faculdade', ['Bixo', 'Professora', 'Traficantezinho', 'Faxineiro', 'Vendedora da Cantina', 'Diretor', 'Bibliotecária', 'Veterano Que Não Se Forma', 'Atleticano Chato', 'Segurança']],
+        ['Farmacia', ['Caixa', 'Farmaceutico', 'Cliente Sem Atestado', 'Cliente Comprando Camisinha', 'Idoso', 'Hipocondriaco', 'Repositor de Gondola', 'Estagiária', 'Maconheiro Comprando Colírio', 'O Que Compra Teste De Gravides']],
+        ['Festival', ['Perdido', 'Good Vibes', 'Artista', 'Fã de Carteirinha', 'Fumante', 'Faxineiro', 'Segurança', 'Vendedor', 'Cambista', 'Caixa Ambulânte']],
+        ['Hospital', ['Médico', 'Infermeiro', 'Cirurgião', 'Recepcionista', 'Hipocondriaco', 'O Doente', 'O Louco', 'A Madre', 'Anestesista', 'O Acidentado']],
+        ['Mecânica', ['Mecânico', 'Dono', 'Sócio', 'Ajudante', 'Cliente', 'Cliente Irritado', 'Cliente Mão de Vaca', 'O Desocupado', 'Vizinho', 'Fornecedor de Peças']],
+        ['Metro', ['Artista', 'Segurança', 'Bilheteiro', 'O Que Pulou A Catraca', 'Executivo', 'Bêbado', 'Vendedor Ambulânte', 'Passageiro', 'Sem Máscara', 'Atrasado']],
+        ['Padaria', ['Padeiro', 'Bêbado', 'Caixa', 'O Que Compra Coxa Creme', 'Cliente Virado', 'Chepeiro', 'Balconista', 'Eletricista', 'Vigilância Sanitária', 'Vizinho']],
+        ['Parque', ['Skatista', 'Segurança Noturno', 'Vendedor de Água de Côco', 'Senhora Fazendo Cooper', 'Boleiro', 'Jogador de Basquete', 'Guarda Civil Municipal', 'Casal Apaixonado', 'Jardineiro', 'Nóia']],
+        ['Posto de Gasolina', ['Frentista', 'Bêbado', 'Vendedor da Conveniência', 'Mecânico', 'Gerente', 'Caminhoneiro', 'Cliente', 'Turista de Ônibos', 'Motoboy', 'Ciclista']],
+        ['Restaurante', ['Chef', 'Bartender', 'Recepcionista', 'Caixa', 'Influênciadora', 'Vegeteriano', 'Cliente (Que Foge da Conta)', 'Inspetor Sanitârio', 'Casal Que Briga', 'Cliente Que Reclama']],
+        ['Rua', ['CET', 'Policial', 'Morador de Rua', 'Pedestre', 'Corredor', 'Motoboy', 'Uber', 'Skatista', 'Gari', 'Panfleteiro']],
+        ['Super Mercado', ['Estoquista', 'Caixa', 'Jardineiro da Loja', 'Gerente', 'Cliente', 'Menores Comprando Bebida', 'Anunciante', 'Criança Perdida', 'Louco por Promoção', 'Empacotador']],
+        ['Teatro', ['Ator Principal', 'Diretor', 'Espectador', 'Vendedor da Bilheteria', 'Figurinista', 'Familiar do Ator', 'Segurança', 'Vendedor de Pipoca', 'Coadjuvante', 'Espectador Estudante']],
+        ['Banheiro da balada', ['Drogado', 'Apertado Para Fazer Xixi', 'O Que está Passando Mal', 'O Que Puxa Assunto', 'O Que Manda Mensagem Pra Ex', 'Briguento', 'Faxineiro', 'Beijoqueiro', 'Nunca Sai Da Fila', 'Funcionario Descansando']],
+        ['Fazenda', ['Fazendeiro', 'Agroboy', 'Vaqueiro', 'Lenhador', 'Veterinário', 'Proprietário', 'Forncedor de Adubo', 'Caseiro', 'Vizinho', 'Fã de Sertanejo']],
+        ['Cafeteria', ['Caixa', 'Garçon', 'Confeteiro', 'Executivo', 'Crítico Gastronomico', 'Cliente', 'Blogueira', 'Pessoa Atrasada', 'Fofoqueira', 'Universitário']],
+        ['Biblioteca', ['Bibliotecário', 'Casal Apaixonado','Estudante', 'O Que Lê Alto', 'Faxineiro', 'Turista', 'Escritor', 'Fã do Escritor', 'Intelectual', 'Curador de Livros']],
+        ['Igreja', ['Padre', 'Freira', 'Crente', 'Criança', 'Noiva', 'Noivo', 'Emocionado', 'Turista', 'Fotógrafo', 'O Que Se Confessa']],
+        ['Circo', ['Palhaço', 'Mágico', 'Malabarista', 'Trapezista', 'Vendedor da Bilheteria', 'Criança', 'Impressionado', 'Pai de Criança', 'O Atrasado', 'Hippie']],
+        ['Parque de Diversões', ['Vendedor de Algodão Doce', 'Primeiro Date', 'Funcionário', 'Nauseado', 'Palhaço', 'Mecânico', 'Criança', 'Adolescente Intediado', 'Pai Animado', 'Bêbado']],
+        ['Festa Fantasia', ['Bartender', 'Promoter', 'O Barrado', 'Bruxa', 'Elvis Presley', 'Diabo', 'Sem Fatasia', 'Pickachu', 'Hulk', 'Marilyn Monroe', 'A Anja']],
+        ['Casa de Strip', ['A Dançarina', 'Milionário', 'Bêbado', 'Virgem', 'Gerente', 'Curioso', 'Recém Separado', 'Noiva', 'O Tarado', 'DJ']]        
+    ];
+
+    //console.log(situations[0].length)
     let n = Math.floor(Math.random() * situations.length);
     let local = situations[n][0];
     let persons = situations[n][1];
@@ -155,6 +187,6 @@ function shuffle(array) {
   
       newArray.push(...randomItem)
     }
-  
+    console.log(array);
     return newArray
 }

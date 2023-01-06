@@ -75,6 +75,7 @@ main h4 {
     background-color: #004A98;
     border-radius: 100px;
     color: #CBFB59;
+    font-size: 2vh;
     margin: 4% 0;
     padding: 2vh 10vh;
 }
@@ -126,6 +127,8 @@ footer {
     background-color: #004A98;
     border-radius: 100px;
     color: #CBFB59;
+    font-size: 2vh;
+    font-weight: 600;
     margin: 4% 0;
     padding: 2vh 10vh;
 }
@@ -133,27 +136,45 @@ footer {
 .cenario {
     align-items: center;
     display: flex;
+    font-size: 2vh;
+    font-weight: 600;
     justify-content: center;
 }
 
 .role {
     align-items: center;
     display: flex;
+    font-size: 2vh;
+    font-weight: 600;
     justify-content: center;
 } 
 
 #transition {    
     align-items: center;
     display: flex;
-    background-color: #E680E8;
     border-radius: 100px;
-    color: #00000098;
+    color: #000000;
     font-size: 2vh;
     font-weight: 800;
     justify-content: center;
     margin: 0 15vh;
     padding: 3vh 3vh;
     text-align: center;
+}
+
+.legend {
+    align-items: center;
+    display: flex;
+    font-size: 3vh;
+    font-weight: 600;
+    justify-content: center;
+    margin: 7vh 2vh 2vh 2vh;
+}
+
+#ast {
+    color: #E680E8;
+    font-weight: 600;
+    margin: 0 1vh;
 }
 
 /* WEBKIT */
