@@ -24,17 +24,97 @@ time, mark, audio, video {
 /* CSSZIN  */
 
 body {
-
+    background-image: url(./assets/bg\ iz.png);
+    background-size: 100%;
 }
 
 header {
+    align-items: center;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*
+header h1 {
 
 }
 
-main {
+header h4 {
+}
+*/
 
+main {
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/*
+#template {
+
+}
+*/
+
+main h4 {
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    font-size: 2vh;
+    justify-content: center;
+    margin: 0 10vh;
+    padding: 1vh 0;
+}
+
+.players, .players1 {
+    align-items: center;
+    background-color: #004A98;
+    border-radius: 100px;
+    color: #CBFB59;
+    margin: 4% 0;
+    padding: 2vh 10vh;
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.minus, .minus1 {
+    color: #E680E8;
+    cursor: pointer;
+    font-size: 4vh;
+    margin-top: 1vh;
+    padding: 0 1vh;
+}
+
+.plus, .plus1 {
+    color: #E680E8;
+    cursor: pointer;
+    font-size: 4vh;
+    margin-top: 1vh;
+    padding: 0 1vh;
+}
+
+.num, .num1 {
+    font-size: 4vh;
 }
 
 footer {
-    
+    align-items: flex-start;
+    display: flex;
+    height: 20vh;
+    justify-content: center;    
+}
+
+#start, #show, #showSecret {
+    border: none;
+    font-size: 2vh;
+    text-transform: uppercase;   
+
 }
