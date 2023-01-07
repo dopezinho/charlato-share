@@ -33,22 +33,24 @@ time, mark, audio, video {
 /*  CSSZIN  */
 
 body {
-    background-color: #ffebb7;
+    background-color: #ffebb7c2;
     max-width: 100vh;
     max-height: 100vh;
 }
 
 header {
-    height: 20vh;    
+    height: 20vh; 
 }
 
 header h1 {
     align-items: center;
+    color: #490a0a92;
     display: flex;
     font-family: 'Playfair Display SC', serif;
     font-size: 4vh;
     font-weight: 700;
     justify-content: center;
+    padding-top: 2vh;
 }
 header h3 {
     align-items: center;
@@ -56,19 +58,39 @@ header h3 {
     font-size: 1.5vh;
     font-style: italic;
     justify-content: flex-end;
+    padding: 3vh 3vh 0 0;
 }
 header h4 {
     align-items: center;
+    color: #000000;
     display: flex;
     justify-content: center;
 }
 
 main {
+    height: 60vh;
+}
+
+/*
+#template {
+
+}
+*/
+
+.players,
+.players1 {
     align-items: center;
     display: flex;
-    height: 60vh;
-    justify-content: center; 
+    justify-content: center;
+
 }
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 
 footer {
     align-items: center;
