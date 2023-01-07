@@ -65,7 +65,7 @@ startButtom.onclick = function() {
     let finalList = [almostList[0], shuffle(almostList[1])];
     console.log(finalList);
     let main = document.getElementById('template');
-    main.innerHTML = '<h1 id="transition">Passe Para O Primeiro Jogador</p>';
+    main.innerHTML = '<h1 id="transition">Passe para o primeiro jogador</p>';
     startButtom.setAttribute('style', 'display: none;');
     let show = document.getElementById('show');
     show.setAttribute('style', 'display: flex;');
