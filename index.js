@@ -141,11 +141,10 @@ function selectScenario(nPessoas, nImpostores) {
         ['Igreja', ['Padre', 'Freira', 'Crente', 'Criança', 'Noiva', 'Noivo', 'Emocionado', 'Turista', 'Fotógrafo', 'O que se confessa']],
         ['Circo', ['Palhaço', 'Mágico', 'Malabarista', 'Trapezista', 'Vendedor da bilheteria', 'Criança', 'Impressionado', 'Pai/Mãe de criança', 'O atrasado', 'Hippie']],
         ['Parque de Diversões', ['Vendedor de algodão doce', 'Primeiro date', 'Funcionário', 'Nauseado', 'Palhaço', 'Mecânico', 'Criança', 'Adolescente entediado', 'Pai animado', 'Bêbado']],
-        ['Festa a Fantasia', ['Bartender', 'Promoter', 'O barrado', 'Bruxa', 'Elvis Presley', 'Diabo', 'Sem fatasia', 'Pickachu', 'Hulk', 'Marilyn Monroe', 'A anja']],
+        ['Festa a Fantasia', ['Bartender', 'Promoter', 'O barrado', 'Bruxa', 'Elvis Presley', 'Diabo', 'Sem fantasia', 'Pikachu', 'Hulk', 'Marilyn Monroe', 'A anja']],
         ['Casa de Strip', ['A dançarina', 'Milionário', 'Bêbado', 'Virgem', 'Gerente', 'Curioso', 'Recém separado', 'noiva', 'O tarado', 'DJ']]        
     ];
-
-
+ 
 
 
     //console.log(situations[0].length)
