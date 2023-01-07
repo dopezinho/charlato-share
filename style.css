@@ -78,7 +78,7 @@ main {
     align-items: center;
     display: flex;
     font-size: 4vh;
-    height: 50vh;
+    height: 55vh;
     justify-content: center;
 }
 
@@ -110,7 +110,7 @@ main {
 
 footer {
     align-items: flex-start;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
 }
