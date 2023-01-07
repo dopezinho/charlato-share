@@ -46,7 +46,7 @@ body {
 }
 
 header {
-    height: 20vh; 
+    height: 20vh;
 }
 
 header h1 {
@@ -180,8 +180,7 @@ footer {
     padding: 1vh 2vh 0 2vh;
 }
 
-
-/* WEBKIT */
+/*  WEBKIT  */
 
 body,
 body::selection {  
