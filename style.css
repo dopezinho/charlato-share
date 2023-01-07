@@ -40,7 +40,7 @@ time, mark, audio, video {
 /*  CSSZIN  */
 
 body {
-    background-color: #ffebb7c2;
+    background-color: #efd9a1a7;
     max-width: 100vh;
     max-height: 100vh;
 }
@@ -51,19 +51,20 @@ header {
 
 header h1 {
     align-items: center;
-    color: #490a0a92;
+    color: #630b0b;
     display: flex;
     font-family: 'Playfair Display SC', serif;
-    font-size: 3vh;
-    font-weight: 700;
+    font-size: 4vh;
+    font-weight: 600;
     justify-content: center;
     padding-top: 6vh;
 }
 header h3 {
     align-items: center;
+    color: #000000;
     display: flex;
     font-size: 1.5vh;
-    font-style: italic;
+    font-weight: 600;
     justify-content: flex-end;
     padding: 3vh 3vh 0 0;
 }
@@ -85,7 +86,9 @@ main {
 .players,
 .players1 {
     align-items: center;
+    color: #3f2709e6;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     margin-bottom: 2vh;
 
@@ -93,6 +96,7 @@ main {
 
 .wrapper {
     align-items: center;
+    color: #6c4617d6;
     display: flex;
     justify-content: center;
 }
@@ -126,6 +130,7 @@ footer {
 
 #transition {    
     align-items: center;
+    color: #7007a9df;
     display: flex;
     font-size: 3vh;
     font-weight: 600;
@@ -134,6 +139,7 @@ footer {
 
 .jogador {
     align-items: center;
+    color: #3f2709e6;
     display: flex;
     font-size: 7vh;
     font-weight: 600;
