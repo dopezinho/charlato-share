@@ -23,7 +23,12 @@ time, mark, audio, video {
 
 /*  IMPORT  */
 
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* header h1 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*  header h3 */
+
+/*  header h4 */
 
 /*  CSSZIN  */
 
@@ -40,14 +45,14 @@ header {
 header h1 {
     align-items: center;
     display: flex;
-    font-family: 'Concert One', cursive;
+    font-family: 'Playfair Display SC', serif;
     font-size: 4vh;
+    font-weight: 700;
     justify-content: center;
 }
 header h3 {
     align-items: center;
     display: flex;
-    font-family: 'Concert One', cursive;
     font-size: 1.5vh;
     font-style: italic;
     justify-content: flex-end;
@@ -55,7 +60,6 @@ header h3 {
 header h4 {
     align-items: center;
     display: flex;
-    font-family: 'Concert One', cursive;
     justify-content: center;
 }
 
