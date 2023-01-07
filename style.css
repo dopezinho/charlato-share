@@ -1,3 +1,15 @@
+
+
+/*  IMPORT  */
+
+/* header h1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*  header h3 */
+
+/*  header h4 */
+
 /*  CSS RESET  */
 
 html, body, div, span, applet, object, iframe,
@@ -21,14 +33,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/*  IMPORT  */
 
-/* header h1 */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/*  header h3 */
 
-/*  header h4 */
 
 /*  CSSZIN  */
 
@@ -47,7 +54,7 @@ header h1 {
     color: #490a0a92;
     display: flex;
     font-family: 'Playfair Display SC', serif;
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: 700;
     justify-content: center;
     padding-top: 2vh;
@@ -68,20 +75,19 @@ header h4 {
 }
 
 main {
+    align-items: center;
+    display: flex;
+    font-size: 4vh;
     height: 60vh;
+    justify-content: center;
 }
-
-/*
-#template {
-
-}
-*/
 
 .players,
 .players1 {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 2vh;
 
 }
 
@@ -91,10 +97,88 @@ main {
     justify-content: center;
 }
 
+.minus, .num, .plus {
+    margin-bottom: 5vh;
+}
+
+.minus, .minus1, .plus, .plus1 {
+    cursor: pointer;
+    padding: 3vh 2vh 2vh 2vh;
+}
+
+/*  BUTTONS  */
 
 footer {
+    align-items: flex-start;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+#start, #show, #showSecret {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 3vh;
+}
+
+/* jS Classes */
+
+#transition {    
     align-items: center;
     display: flex;
-    height: 20vh;
+    font-size: 3vh;
+    font-weight: 600;
     justify-content: center;
+}
+
+.jogador {
+    align-items: center;
+    display: flex;
+    font-size: 7vh;
+    font-weight: 600;
+    justify-content: center;
+    padding-bottom: 8vh;
+}
+
+.cenario {
+    align-items: center;
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    padding-bottom: 6vh;
+}
+
+.role {
+    align-items: center;
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    padding-bottom: 18vh;
+}
+
+.legend {
+    align-items: center;
+    display: flex;
+    font-size: 6vh;
+    justify-content: center;
+    padding-bottom: 1vh;
+}
+
+#ast {
+    align-items: center;
+    display: flex;
+    font-size: 5vh;
+    font-weight: 600;
+    justify-content: center;
+    padding: 1vh 2vh 0 2vh;
+}
+
+
+/* WEBKIT */
+
+body,
+body::selection {  
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
