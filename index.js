@@ -116,7 +116,7 @@ function selectScenario(nPessoas, nImpostores) {
         ['Bar', ['Gerente', 'Garçon', 'Caixa', 'Universitário', 'Casal apaixonado', 'Nóia', 'Vendedor de bala', 'Fumante sem isqueiro', 'Bohêmio', 'Truqueiro']],
         ['Academia', ['Sócio', 'Preguiçoso', 'Rato de Academia', 'Influênciadora', 'Recepcionista', 'Personal galinha', 'Aluna de Zumba', 'Fisioculturista', 'Lutador', 'Fornecedor de Aparelhos de Academia']],
         ['Balada', ['Mixologista/Bartender', 'Gerente', 'Drogado', 'Fumante', 'DJ', 'Héterotop', 'Dançarino', 'Vendedor de Hot Dog', 'Eletricista', 'Faxineiro']],
-        ['Cinema', ['Vendedor de Pipoca', 'Vendedor da bilheteria', 'Cinegrafista', 'Casal apaixonado', 'Pessoa que Ri Alto', 'Pessoa que Dorme', 'Pessoa que Fofóca', 'Pessoa Emocionada', 'Cosplay', 'Eletricista']],
+        ['Cinema', ['Vendedor de Pipoca', 'Vendedor da bilheteria', 'Cinegrafista', 'Casal apaixonado', 'Pessoa que ri alto', 'Pessoa que dorme', 'Pessoa que fofóca', 'Pessoa emocionada', 'Cosplay', 'Eletricista']],
         ['Clube', ['Treinador', 'Massagista', 'Salva Vidas', 'Milionário', 'Sócio', 'Esportista', 'Jardineiro', 'Recepcionista', 'Cansado', 'Criança de Férias']],
         ['Cruzeiro', ['Monitor', 'Capitão', 'Pai/Mãe de Primeira Viagem', 'Chef', 'Bartender', 'Nauseado', 'Jogador Compulsivo', 'A Doida do Protetor Solar', 'Salva Vidas', 'Baladeiro']],
         ['Delegacia', ['Bêbado', 'Ladrão', 'Delegado', 'Preso por Roubo', 'Preso por uma Paranga', 'Vítima', 'Familiar da Vítima', 'Advogado', 'Faxineiro', 'Policial']],
