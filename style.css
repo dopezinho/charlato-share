@@ -138,7 +138,7 @@ footer {
     font-size: 7vh;
     font-weight: 600;
     justify-content: center;
-    padding-bottom: 8vh;
+    padding-bottom: 4vh;
 }
 
 .cenario {
@@ -154,7 +154,7 @@ footer {
     display: flex;
     font-size: 3vh;
     justify-content: center;
-    padding-bottom: 18vh;
+    padding-bottom: 12vh;
 }
 
 .legend {
