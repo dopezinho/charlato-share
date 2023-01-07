@@ -112,31 +112,31 @@ function selectScenario(nPessoas, nImpostores) {
     const situations = [
         ['Karaoke', ['Cantor', 'Tímido', 'Desafinado', 'Bartender', 'Técnico de Áudio', 'Dançarino', 'Segurança', 'Gerente', 'Dono', 'Vendedor de milho']],
         ['Praia', ['Vendedor de picolé', 'Salva-Vidas', 'Gringo', 'Fotógrafo', 'Surfista', 'Vendedor de miçangas',' Dono do quiosque', 'Esportista', 'Pescador', 'Morador local']],
-        ['Zoológico', ['Veterinário', 'Jardineiro', 'Biólogo', 'Funcionário', 'Vendedor de souvenier', 'Cambista', 'Guia', 'Visitante', 'Fotógrafo', 'Vendedor de água']],
-        ['Bar', ['Gerente', 'Garçon', 'Caixa', 'Universitário', 'Casal apaixonado', 'Nóia', 'Vendedor de bala', 'Fumante sem isqueiro', 'Bohêmio', 'Truqueiro']],
-        ['Academia', ['Sócio', 'Preguiçoso', 'Rato de academia', 'Influênciadora', 'Recepcionista', 'Personal galinha', 'Aluna de Zumba', 'Fisioculturista', 'Lutador', 'Fornecedor']],
+        ['Zoológico', ['Veterinário', 'Jardineiro', 'Biólogo', 'Funcionário', 'Vendedor de souvenir', 'Cambista', 'Guia', 'Visitante', 'Fotógrafo', 'Vendedor de água']],
+        ['Bar', ['Gerente', 'Garçom', 'Caixa', 'Universitário', 'Casal apaixonado', 'Nóia', 'Vendedor de bala', 'Fumante sem isqueiro', 'Boêmio', 'Truqueiro']],
+        ['Academia', ['Sócio', 'Preguiçoso', 'Rato de academia', 'Influenciadora', 'Recepcionista', 'Personal galinha', 'Aluna de Zumba', 'Fisiculturista', 'Lutador', 'Fornecedor']],
         ['Balada', ['Mixologista/Bartender', 'Gerente', 'Drogado', 'Fumante', 'DJ', 'Héterotop', 'Dançarino', 'Vendedor de Hot Dog', 'Eletricista', 'Faxineiro']],
-        ['Cinema', ['Vendedor de pipoca', 'Vendedor da bilheteria', 'Cinegrafista', 'Casal apaixonado', 'Pessoa que ri alto', 'Pessoa que dorme', 'Pessoa que fofóca', 'Pessoa emocionada', 'Cosplay', 'Eletricista']],
+        ['Cinema', ['Vendedor de pipoca', 'Vendedor da bilheteria', 'Cinegrafista', 'Casal apaixonado', 'Pessoa que ri alto', 'Pessoa que dorme', 'Pessoa que fofoca', 'Pessoa emocionada', 'Cosplay', 'Eletricista']],
         ['Clube', ['Treinador', 'Massagista', 'Salva-Vidas', 'Milionário', 'Sócio', 'Esportista', 'Jardineiro', 'Recepcionista', 'Cansado', 'Criança de férias']],
         ['Cruzeiro', ['Monitor', 'Capitão', 'Pai/Mãe de primeira viagem', 'Chef', 'Bartender', 'Nauseado', 'Jogador compulsivo', 'A doida do protetor solar', 'Salva-Vidas', 'Baladeiro']],
         ['Delegacia', ['Bêbado', 'Ladrão', 'Delegado', 'Preso por roubo', 'Preso por uma paranga', 'Vítima', 'Familiar da vítima', 'Advogado', 'Faxineiro', 'Policial']],
         ['Estacionamento', ['Manobrista', 'Cobrador','Dono', 'Funcionário', 'O que perdeu o ticket', 'Impaciente', 'Fumante', 'Perderam seu carro', 'Gerente', 'Bêbado']],
         ['Faculdade', ['Bixo', 'Professora', 'Traficantezinho', 'Faxineiro', 'Vendedora da cantina', 'Diretor', 'Bibliotecária', 'Veterano que não se forma', 'Atleticano chato', 'Segurança']],
-        ['Farmacia', ['Caixa', 'Farmaceutico', 'Cliente sem atestado', 'Cliente comprando camisinha', 'Idoso', 'Hipocondriaco', 'Repositor de gondola', 'Estagiária', 'Maconheiro comprando colírio', 'O que compra teste de gravides']],
-        ['Festival', ['Perdido', 'Good Vibes', 'Artista', 'Fã de carteirinha', 'Fumante', 'Faxineiro', 'Segurança', 'Vendedor', 'Cambista', 'Caixa ambulânte']],
-        ['Hospital', ['Médico', 'Infermeiro', 'Cirurgião', 'Recepcionista', 'Hipocondriaco', 'O Doente', 'O louco', 'A madre', 'Anestesista', 'O acidentado']],
+        ['Farmacia', ['Caixa', 'Farmacêutico', 'Cliente sem atestado', 'Cliente comprando camisinha', 'Idoso', 'Hipocondríaco', 'Repositor de gôndola', 'Estagiária', 'Maconheiro comprando colírio', 'O que compra teste de gravides']],
+        ['Festival', ['Perdido', 'Good Vibes', 'Artista', 'Fã de carteirinha', 'Fumante', 'Faxineiro', 'Segurança', 'Vendedor', 'Cambista', 'Caixa ambulante']],
+        ['Hospital', ['Médico', 'Enfermeiro', 'Cirurgião', 'Recepcionista', 'Hipocondríaco', 'O Doente', 'O louco', 'A madre', 'Anestesista', 'O acidentado']],
         ['Mecânica', ['Mecânico', 'Dono', 'Sócio', 'Ajudante', 'Cliente', 'Cliente irritado', 'Cliente mão de vaca', 'O desocupado', 'Vizinho', 'Fornecedor de peças']],
-        ['Metro', ['Artista', 'Segurança', 'Bilheteiro', 'O que pulou a catraca', 'Executivo', 'Bêbado', 'Vendedor ambulânte', 'Passageiro', 'Sem máscara', 'Atrasado']],
+        ['Metro', ['Artista', 'Segurança', 'Bilheteiro', 'O que pulou a catraca', 'Executivo', 'Bêbado', 'Vendedor ambulante', 'Passageiro', 'Sem máscara', 'Atrasado']],
         ['Padaria', ['Padeiro', 'Bêbado', 'Caixa', 'O que compra coxa creme', 'Cliente virado', 'Chapeiro', 'Balconista', 'Eletricista', 'Vigilância sanitária', 'Vizinho']],
         ['Parque', ['Skatista', 'Segurança noturno', 'Vendedor de água de côco', 'Senhora fazendo cooper', 'Boleiro', 'Jogador de Basquete', 'Guarda Civil Municipal', 'Casal apaixonado', 'Jardineiro', 'Nóia']],
-        ['Posto de gasolina', ['Frentista', 'Bêbado', 'Vendedor da conveniência', 'Mecânico', 'Gerente', 'Caminhoneiro', 'Cliente', 'Turista de ônibos', 'Motoboy', 'Ciclista']],
-        ['Restaurante', ['Chef', 'Bartender', 'Recepcionista', 'Caixa', 'Influênciadora', 'Vegeteriano', 'Cliente (que foge da conta)', 'Inspetor sanitârio', 'Casal que briga', 'Cliente que reclama']],
+        ['Posto de gasolina', ['Frentista', 'Bêbado', 'Vendedor da conveniência', 'Mecânico', 'Gerente', 'Caminhoneiro', 'Cliente', 'Turista de ônibus', 'Motoboy', 'Ciclista']],
+        ['Restaurante', ['Chef', 'Bartender', 'Recepcionista', 'Caixa', 'Influenciadora', 'Vegetariano', 'Cliente (que foge da conta)', 'Inspetor sanitário', 'Casal que briga', 'Cliente que reclama']],
         ['Rua', ['CET', 'Policial', 'Morador de rua', 'Pedestre', 'Corredor', 'Motoboy', 'Uber', 'Skatista', 'Gari', 'Panfleteiro']],
         ['Supermercado', ['Estoquista', 'Caixa', 'Jardineiro da loja', 'Gerente', 'Cliente', 'Menores comprando bebida', 'Anunciante', 'Criança perdida', 'Louco por promoção', 'Empacotador']],
         ['Teatro', ['Ator principal', 'Diretor', 'Espectador', 'Vendedor da bilheteria', 'Figurinista', 'Familiar do ator', 'Segurança', 'Vendedor de pipoca', 'Coadjuvante', 'Espectador estudante']],
-        ['Banheiro da balada', ['Drogado', 'Apertado para fazer xixi', 'O que está passando mal', 'O que puxa assunto', 'O que manda mensagem pra ex', 'Briguento', 'Faxineiro', 'Beijoqueiro', 'Nunca sai da fila', 'Funcionario descansando']],
-        ['Fazenda', ['Fazendeiro', 'Agroboy', 'Vaqueiro', 'Lenhador', 'Veterinário', 'Proprietário', 'Forncedor de adubo', 'Caseiro', 'Vizinho', 'Fã de sertanejo']],
-        ['Cafeteria', ['Caixa', 'Garçon', 'Confeteiro', 'Executivo', 'Crítico gastronomico', 'Cliente', 'Blogueira', 'Pessoa atrasada', 'Fofoqueira', 'Universitário']],
+        ['Banheiro da balada', ['Drogado', 'Apertado para fazer xixi', 'O que está passando mal', 'O que puxa assunto', 'O que manda mensagem pra ex', 'Briguento', 'Faxineiro', 'Beijoqueiro', 'Nunca sai da fila', 'Funcionário descansando']],
+        ['Fazenda', ['Fazendeiro', 'Agroboy', 'Vaqueiro', 'Lenhador', 'Veterinário', 'Proprietário', 'Fornecedor de adubo', 'Caseiro', 'Vizinho', 'Fã de sertanejo']],
+        ['Cafeteria', ['Caixa', 'Garçom', 'Confeiteiro', 'Executivo', 'Crítico gastronômico', 'Cliente', 'Blogueira', 'Pessoa atrasada', 'Fofoqueira', 'Universitário']],
         ['Biblioteca', ['Bibliotecário', 'Casal apaixonado','Estudante', 'O que lê em voz alta', 'Faxineiro', 'Turista', 'Escritor', 'Fã do escritor', 'Intelectual', 'Curador de livros']],
         ['Igreja', ['Padre', 'Freira', 'Crente', 'Criança', 'Noiva', 'Noivo', 'Emocionado', 'Turista', 'Fotógrafo', 'O que se confessa']],
         ['Circo', ['Palhaço', 'Mágico', 'Malabarista', 'Trapezista', 'Vendedor da bilheteria', 'Criança', 'Impressionado', 'Pai/Mãe de criança', 'O atrasado', 'Hippie']],
@@ -144,6 +144,9 @@ function selectScenario(nPessoas, nImpostores) {
         ['Festa a Fantasia', ['Bartender', 'Promoter', 'O barrado', 'Bruxa', 'Elvis Presley', 'Diabo', 'Sem fatasia', 'Pickachu', 'Hulk', 'Marilyn Monroe', 'A anja']],
         ['Casa de Strip', ['A dançarina', 'Milionário', 'Bêbado', 'Virgem', 'Gerente', 'Curioso', 'Recém separado', 'noiva', 'O tarado', 'DJ']]        
     ];
+
+
+
 
     //console.log(situations[0].length)
     let n = Math.floor(Math.random() * situations.length);
