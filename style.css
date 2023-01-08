@@ -120,7 +120,7 @@ main {
 .minus, .minus1, .plus, .plus1 {
     cursor: pointer;    
     font-family: 'Bakbak One', cursive;
-    padding: 0 2vh;
+    padding: 0 2.5vh;
 }
 
 .num, .num1 {
