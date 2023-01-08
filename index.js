@@ -85,8 +85,8 @@ startButtom.onclick = function() {
                 let role = document.getElementById('secretId');
                 role.setAttribute('style', 'visibility: visible;');
                 let cenario = document.getElementById('cenario');
-                if (role.innerHTML == 'Charlatão'){
-                    cenario.innerHTML = `xxxxx`;
+                if (role.innerHTML == 'eeta charlatãozin safad'){
+                    cenario.innerHTML = `Descubra o lugar!`;
                 }else{
                     cenario.innerHTML = `${finalList[0][0]}`;
                 }
@@ -169,7 +169,7 @@ function selectScenario(nPessoas, nImpostores) {
 function pushImpostor(list, nImpostores) {
     let i = 0;
     while (i < nImpostores) {
-        list[1].push('Charlatão');
+        list[1].push('eeta charlatãozin safad');
         const main = document.getElementById('template');
         main.innerHTML = '';
         i = i + 1;

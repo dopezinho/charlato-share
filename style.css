@@ -54,7 +54,7 @@ header h1 {
     color: #630b0b;
     display: flex;
     font-family: 'Playfair Display SC', serif;
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-weight: 600;
     justify-content: center;
     padding-top: 6vh;
@@ -78,7 +78,7 @@ header h4 {
 main {
     align-items: center;
     display: flex;
-    font-size: 4vh;
+    font-size: 3vh;
     height: 60vh;
     justify-content: center;
 }
@@ -122,8 +122,10 @@ footer {
 #start, #show, #showSecret {
     background: transparent;
     border: none;
+    color: #3f2709e6;
     cursor: pointer;
-    font-size: 3vh;
+    font-size: 2.5vh;
+    font-weight: 600;
 }
 
 /* jS Classes */
@@ -141,7 +143,7 @@ footer {
     align-items: center;
     color: #3f2709e6;
     display: flex;
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-weight: 600;
     justify-content: center;
     padding-bottom: 6vh;
@@ -149,6 +151,7 @@ footer {
 
 .cenario {
     align-items: center;
+    color: #6c4617d6;
     display: flex;
     font-size: 2vh;
     justify-content: center;
@@ -157,6 +160,7 @@ footer {
 
 .role {
     align-items: center;
+    color: #6c4617d6;
     display: flex;
     font-size: 2vh;
     justify-content: center;
@@ -165,8 +169,10 @@ footer {
 
 .legend {
     align-items: center;
+    color: #3f2709e6;
     display: flex;
-    font-size: 3.5vh;
+    font-size: 3vh;
+    font-weight: 600;
     justify-content: center;
     padding-bottom: 1vh;
 }
