@@ -96,7 +96,7 @@ startButtom.onclick = function() {
                 count ++
             };
         }else {
-            main.innerHTML = `<div class="players"><h2>Jogadores:</h2></div><div class="wrapper"><span class="minus" id="minusPlayer">*</span><span class="num" id="nJogadores">${nPlayers}</span><span class="plus" id="plusPlayer">*</span></div><div class="players1"><h2>Charlatos:</h2></div><div class="wrapper"><span class="minus1" id="minusChar">*</span><span class="num1" id="nImpostores">${nChar}</span><span class="plus1" id="plusChar">*</span></div>`
+            main.innerHTML = `<div class="players"><h2>Jogadores:</h2></div><div class="wrapper"><span class="minus" id="minusPlayer">-</span><span class="num" id="nJogadores">${nPlayers}</span><span class="plus" id="plusPlayer">+</span></div><div class="players1"><h2>Charlatos:</h2></div><div class="wrapper"><span class="minus1" id="minusChar">-</span><span class="num1" id="nImpostores">${nChar}</span><span class="plus1" id="plusChar">+</span></div>`
             show.setAttribute('style', 'display: none;');
             startButtom.setAttribute('style', 'display: block;')
             selectNPlayers();

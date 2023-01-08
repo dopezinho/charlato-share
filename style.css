@@ -50,7 +50,7 @@ body {
 }
 
 header {
-    height: 15vh;
+    height: 20vh;
 }
 
 header h1 {
@@ -61,7 +61,7 @@ header h1 {
     font-size: 3vh;
     font-weight: 600;
     justify-content: center;
-    padding-top: 6vh;
+    padding-top: 4vh;
 }
 header h3 {
     align-items: center;
@@ -79,23 +79,22 @@ header h4 {
     justify-content: center;
 }
 
-main {
-    align-items: center;
-    display: flex;
-    font-size: 3vh;
-    height: 65vh;
-    justify-content: center;
-}
-
 .img {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-main img {
-    margin-bottom: 7.5vh;
-    width: 15vh;
+header img {
+    width: 8vh;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    font-size: 3vh;
+    height: 60vh;
+    justify-content: center;
 }
 
 .players,
