@@ -91,7 +91,7 @@ main {
 }
 
 main img {
-    margin-bottom: 10vh;
+    margin-bottom: 7.5vh;
     width: 15vh;
 }
 
@@ -173,6 +173,7 @@ footer {
     font-weight: 600;
     justify-content: center;
     padding-bottom: 6vh;
+    padding-top: 10vh;
 }
 
 .cenario {
