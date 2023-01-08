@@ -102,7 +102,6 @@ main {
     align-items: center;
     color: #6c4617d6;
     display: flex;
-    font-family: 'Bakbak One', cursive;
     font-weight: 600;
     justify-content: center;
 }
@@ -111,9 +110,22 @@ main {
     margin-bottom: 5vh;
 }
 
+.minus1 {
+    margin-bottom: 0.5vh;
+}
+.minus {
+    margin-bottom: 5.5vh;
+}
+
 .minus, .minus1, .plus, .plus1 {
-    cursor: pointer;
+    cursor: pointer;    
+    font-family: 'Bakbak One', cursive;
     padding: 0 2vh;
+}
+
+.num, .num1 {
+    font-size: 4vh;
+    font-weight: 400;
 }
 
 /*  BUTTONS  */
