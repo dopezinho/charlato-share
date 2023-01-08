@@ -80,8 +80,11 @@ header h4 {
 }
 
 main {
+    align-items: center;
+    display: flex;
     font-size: 3vh;
     height: 65vh;
+    justify-content: center;
 }
 
 .img {
