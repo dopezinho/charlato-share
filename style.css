@@ -148,9 +148,10 @@ footer {
 }
 
 #start, #show, #showSecret {
-    background: transparent;
-    border: none;
-    color: #3f2709e6;
+    background: rgb(44, 16, 16);
+    border: 1.5px solid black;
+    border-radius: 3px;
+    color: #f1e3be;
     cursor: pointer;
     font-size: 2.5vh;
     font-weight: 600;
@@ -160,11 +161,15 @@ footer {
 
 #transition {    
     align-items: center;
-    color: #7007a9df;
+    background-color: #020b8bb4;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    color: #f1e3be;
     display: flex;
     font-size: 2.5vh;
     font-weight: 600;
     justify-content: center;
+    padding: 4vh;
 }
 
 .jogador {
