@@ -10,6 +10,10 @@
 
 /*  header h4 */
 
+/*  .wrapper  */
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
 /*  CSS RESET  */
 
 html, body, div, span, applet, object, iframe,
@@ -98,6 +102,8 @@ main {
     align-items: center;
     color: #6c4617d6;
     display: flex;
+    font-family: 'Bakbak One', cursive;
+    font-weight: 600;
     justify-content: center;
 }
 
@@ -107,7 +113,7 @@ main {
 
 .minus, .minus1, .plus, .plus1 {
     cursor: pointer;
-    padding: 3vh 2vh 2vh 2vh;
+    padding: 0 2vh;
 }
 
 /*  BUTTONS  */
