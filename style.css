@@ -50,7 +50,7 @@ body {
 }
 
 header {
-    height: 20vh;
+    height: 15vh;
 }
 
 header h1 {
@@ -70,7 +70,7 @@ header h3 {
     font-size: 1.5vh;
     font-weight: 600;
     justify-content: flex-end;
-    padding: 3vh 3vh 0 0;
+    padding: 1vh 2vh 0 0;
 }
 header h4 {
     align-items: center;
@@ -81,7 +81,7 @@ header h4 {
 
 main {
     font-size: 3vh;
-    height: 60vh;
+    height: 65vh;
 }
 
 .img {
@@ -91,6 +91,7 @@ main {
 }
 
 main img {
+    margin-bottom: 5vh;
     width: 15vh;
 }
 
