@@ -133,7 +133,8 @@ main {
 }
 
 .minus:hover, .minus1:hover, .plus:hover, .plus1:hover {
-    font-size: 4vh;
+    box-shadow: 1px 1px #ffffff69;
+    border-radius: 50%;
 }
 
 .num, .num1 {
