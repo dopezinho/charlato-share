@@ -133,7 +133,7 @@ main {
 }
 
 .minus:hover, .minus1:hover, .plus:hover, .plus1:hover {
-    box-shadow: 1px 1px #ffffff69;
+    box-shadow: 1px 1px #cbee57;
     border-radius: 50%;
 }
 
