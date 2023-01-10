@@ -104,7 +104,6 @@ main {
     display: flex;
     font-weight: bold;
     justify-content: center;
-    margin-bottom: 2vh;
 
 }
 
@@ -120,17 +119,17 @@ main {
     margin-bottom: 5vh;
 }
 
-.minus1 {
-    margin-bottom: 0.5vh;
+.minus, .minus1 {
+    padding: 2vh 3vh 2vh 16vh;
 }
-.minus {
-    margin-bottom: 5.5vh;
+
+.plus, .plus1 {
+    padding: 2vh 16vh 2vh 3vh;
 }
 
 .minus, .minus1, .plus, .plus1 {
     cursor: pointer;    
     font-family: 'Bakbak One', cursive;
-    padding: 0 3vh;
 }
 
 .num, .num1 {
