@@ -120,16 +120,20 @@ main {
 }
 
 .minus, .minus1 {
-    padding: 2vh 3vh 2vh 16vh;
+    padding: 2vh 3vh 2vh 20vh;
 }
 
 .plus, .plus1 {
-    padding: 2vh 16vh 2vh 3vh;
+    padding: 2vh 20vh 2vh 3vh;
 }
 
 .minus, .minus1, .plus, .plus1 {
     cursor: pointer;    
     font-family: 'Bakbak One', cursive;
+}
+
+.minus:hover, .minus1:hover, .plus:hover, .plus1:hover {
+    font-size: 4vh;
 }
 
 .num, .num1 {
