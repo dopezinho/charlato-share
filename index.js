@@ -126,7 +126,7 @@ function selectScenario(nPessoas, nImpostores) {
         ['Festival', ['Perdido', 'Good Vibes', 'Artista', 'Fã de carteirinha', 'Fumante', 'Faxineiro', 'Segurança', 'Vendedor', 'Cambista', 'Caixa ambulante']],
         ['Hospital', ['Médico', 'Enfermeiro', 'Cirurgião', 'Recepcionista', 'Hipocondríaco', 'O Doente', 'O louco', 'A madre', 'Anestesista', 'O acidentado']],
         ['Mecânica', ['Mecânico', 'Dono', 'Sócio', 'Ajudante', 'Cliente', 'Cliente irritado', 'Cliente mão de vaca', 'O desocupado', 'Vizinho', 'Fornecedor de peças']],
-        ['Metro', ['Artista', 'Segurança', 'Bilheteiro', 'O que pulou a catraca', 'Executivo', 'Bêbado', 'Vendedor ambulante', 'Passageiro', 'Sem máscara', 'Atrasado']],
+        ['Metrô', ['Artista', 'Segurança', 'Bilheteiro', 'O que pulou a catraca', 'Executivo', 'Bêbado', 'Vendedor ambulante', 'Passageiro', 'Sem máscara', 'Atrasado']],
         ['Padaria', ['Padeiro', 'Bêbado', 'Caixa', 'O que compra coxa creme', 'Cliente virado', 'Chapeiro', 'Balconista', 'Eletricista', 'Vigilância sanitária', 'Vizinho']],
         ['Parque', ['Skatista', 'Segurança noturno', 'Vendedor de água de côco', 'Senhora fazendo cooper', 'Boleiro', 'Jogador de Basquete', 'Guarda Civil Municipal', 'Casal apaixonado', 'Jardineiro', 'Nóia']],
         ['Posto de gasolina', ['Frentista', 'Bêbado', 'Vendedor da conveniência', 'Mecânico', 'Gerente', 'Caminhoneiro', 'Cliente', 'Turista de ônibus', 'Motoboy', 'Ciclista']],
@@ -143,6 +143,7 @@ function selectScenario(nPessoas, nImpostores) {
         ['Parque de Diversões', ['Vendedor de algodão doce', 'Primeiro date', 'Funcionário', 'Nauseado', 'Palhaço', 'Mecânico', 'Criança', 'Adolescente entediado', 'Pai animado', 'Bêbado']],
         ['Festa a Fantasia', ['Bartender', 'Promoter', 'O barrado', 'Bruxa', 'Elvis Presley', 'Diabo', 'Sem fantasia', 'Pikachu', 'Hulk', 'Marilyn Monroe', 'A anja']],
         ['Casa de Strip', ['A dançarina', 'Milionário', 'Bêbado', 'Virgem', 'Gerente', 'Curioso', 'Recém separado', 'noiva', 'O tarado', 'DJ']]        
+        ['Chácara do Junho', ['Biel', 'Rafa', 'Felps', 'Lo', 'Jojozinha', 'Junior', 'Li', 'Gui', 'Mu', 'Paulin']],
     ];
  
 
